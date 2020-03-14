@@ -21,7 +21,6 @@
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </nav>
 
-<?php wp_head(); ?>
 
 </header>
 <div id="container">
