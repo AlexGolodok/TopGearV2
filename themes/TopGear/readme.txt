@@ -1,33 +1,38 @@
-=== BlankSlate ===
+=== surfing ===
 
-Contributors: tidythemes, bhadaway
-Theme link: https://github.com/tidythemes/blankslate
-Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
-Requires at least: 5.1
-Tested up to: 5.1
-Stable tag: trunk
-License: GNU General Public License v3 or Later
-License URI: https://www.gnu.org/licenses/gpl.html
+Contributors: automattic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Please read: tidythemes.com/concept.
+Requires at least: 4.5
+Tested up to: 4.8
+Stable tag: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+
+A starter theme called surfing.
 
 == Description ==
 
-IMPORTANT - PLEASE READ: http://tidythemes.com/concept/
+Description
 
-YOU MAY DELETE THIS FILE AND ANY OTHER FILE(S) BEFORE STARTING YOUR PROJECT
+== Installation ==
 
-BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
 
-If you're creating your own theme or client project, open up all files and do a "Find and Replace All in All Files" on the word "blankslate" with your own slug and prefix.
+== Frequently Asked Questions ==
 
-=== License ===
+= Does this theme support any plugins? =
 
-In its unchanged and original state:
+surfing includes support for Infinite Scroll in Jetpack.
 
-BlankSlate WordPress Theme © 2011-2019 TidyThemes
-BlankSlate is distributed under the terms of the GNU GPL
+== Changelog ==
 
-The BlankSlate theme package and all files contained within are distributed under the terms of the GNU GPL v3 or Later (https://www.gnu.org/licenses/gpl.html).
+= 1.0 - May 12 2015 =
+* Initial release
 
-Once you've significantly changed the theme to build your own unique project, either for yourself or for a client under a different theme name (as is encouraged), you're entirely welcome to copyright and license that project as you see fit.
+== Credits ==
+
+* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
