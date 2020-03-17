@@ -1,0 +1,1035 @@
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+Deniss-MacBook-Air:wordpress.local Den$ git remote
+Den
+Gitignore
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "gitignore"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+
+nothing added to commit but untracked files present
+Deniss-MacBook-Air:wordpress.local Den$ git commit Gitignore -m "gitignore"
+error: pathspec 'Gitignore' did not match any file(s) known to git
+Deniss-MacBook-Air:wordpress.local Den$ git commit Gitignore "gitignore"
+error: pathspec 'Gitignore' did not match any file(s) known to git
+error: pathspec 'gitignore' did not match any file(s) known to git
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "gitignore"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+
+nothing added to commit but untracked files present
+Deniss-MacBook-Air:wordpress.local Den$ git rm Gitignore
+fatal: pathspec 'Gitignore' did not match any files
+Deniss-MacBook-Air:wordpress.local Den$ git remote
+Den
+Gitignore
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        wp-content/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den     https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den     https://github.com/AlexGolodok/TopGearV2.git (push)
+Gitignore       master (fetch)
+Gitignore       master (push)
+Deniss-MacBook-Air:wordpress.local Den$ git remote add origin https://github.com/Denrud/wordpress_local.git
+Deniss-MacBook-Air:wordpress.local Den$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Denrud/wordpress_local.git'
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   wp-content/._plugins
+        new file:   wp-content/._themes
+        new file:   wp-content/plugins/._hello.php
+        new file:   wp-content/plugins/hello.php
+        new file:   wp-content/themes/blankslate/404.php
+        new file:   wp-content/themes/blankslate/archive.php
+        new file:   wp-content/themes/blankslate/attachment.php
+        new file:   wp-content/themes/blankslate/author.php
+        new file:   wp-content/themes/blankslate/category.php
+        new file:   wp-content/themes/blankslate/comments.php
+        new file:   wp-content/themes/blankslate/entry-content.php
+        new file:   wp-content/themes/blankslate/entry-footer.php
+        new file:   wp-content/themes/blankslate/entry-meta.php
+        new file:   wp-content/themes/blankslate/entry-summary.php
+        new file:   wp-content/themes/blankslate/entry.php
+        new file:   wp-content/themes/blankslate/footer.php
+        new file:   wp-content/themes/blankslate/functions.php
+        new file:   wp-content/themes/blankslate/header.php
+        new file:   wp-content/themes/blankslate/nav-below-single.php
+        new file:   wp-content/themes/blankslate/nav-below.php
+        new file:   wp-content/themes/blankslate/page.php
+        new file:   wp-content/themes/blankslate/readme.txt
+        new file:   wp-content/themes/blankslate/screenshot.jpg
+        new file:   wp-content/themes/blankslate/search.php
+        new file:   wp-content/themes/blankslate/sidebar.php
+        new file:   wp-content/themes/blankslate/single.php
+        new file:   wp-content/themes/blankslate/style.css
+        new file:   wp-content/themes/blankslate/tag.php
+
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m 'start file clean'
+[master (root-commit) e32e13b] start file clean
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 29 files changed, 594 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100755 wp-content/._plugins
+ create mode 100755 wp-content/._themes
+ create mode 100644 wp-content/plugins/._hello.php
+ create mode 100644 wp-content/plugins/hello.php
+ create mode 100644 wp-content/themes/blankslate/404.php
+ create mode 100644 wp-content/themes/blankslate/archive.php
+ create mode 100644 wp-content/themes/blankslate/attachment.php
+ create mode 100644 wp-content/themes/blankslate/author.php
+ create mode 100644 wp-content/themes/blankslate/category.php
+ create mode 100644 wp-content/themes/blankslate/comments.php
+ create mode 100644 wp-content/themes/blankslate/entry-content.php
+ create mode 100644 wp-content/themes/blankslate/entry-footer.php
+ create mode 100644 wp-content/themes/blankslate/entry-meta.php
+ create mode 100644 wp-content/themes/blankslate/entry-summary.php
+ create mode 100644 wp-content/themes/blankslate/entry.php
+ create mode 100644 wp-content/themes/blankslate/footer.php
+ create mode 100644 wp-content/themes/blankslate/functions.php
+ create mode 100644 wp-content/themes/blankslate/header.php
+ create mode 100644 wp-content/themes/blankslate/nav-below-single.php
+ create mode 100644 wp-content/themes/blankslate/nav-below.php
+ create mode 100644 wp-content/themes/blankslate/page.php
+ create mode 100644 wp-content/themes/blankslate/readme.txt
+ create mode 100644 wp-content/themes/blankslate/screenshot.jpg
+ create mode 100644 wp-content/themes/blankslate/search.php
+ create mode 100644 wp-content/themes/blankslate/sidebar.php
+ create mode 100644 wp-content/themes/blankslate/single.php
+ create mode 100644 wp-content/themes/blankslate/style.css
+ create mode 100644 wp-content/themes/blankslate/tag.php
+Deniss-MacBook-Air:wordpress.local Den$ git push 
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+Deniss-MacBook-Air:wordpress.local Den$ git push origin master
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (33/33), 131.36 KiB | 1.11 MiB/s, done.
+Total 33 (delta 2), reused 18 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Denrud/wordpress_local.git
+ * [new branch]      master -> master
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+* master
+Deniss-MacBook-Air:wordpress.local Den$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+Deniss-MacBook-Air:wordpress.local Den$ git pull origin master
+From https://github.com/Denrud/wordpress_local
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+* master
+Deniss-MacBook-Air:wordpress.local Den$ git remote
+Den
+Gitignore
+origin
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den     https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den     https://github.com/AlexGolodok/TopGearV2.git (push)
+Gitignore       master (fetch)
+Gitignore       master (push)
+origin  https://github.com/Denrud/wordpress_local.git (fetch)
+origin  https://github.com/Denrud/wordpress_local.git (push)
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        wp-content/themes/blankslate/page_2.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "test new file"
+[master 3564856] test new file
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 wp-content/themes/blankslate/page_2.php
+Deniss-MacBook-Air:wordpress.local Den$ git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 473 bytes | 9.00 KiB/s, done.
+Total 6 (delta 2), reused 1 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Denrud/wordpress_local.git
+   e32e13b..3564856  master -> master
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    wp-content/themes/blankslate/page_2.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git pull 
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+Deniss-MacBook-Air:wordpress.local Den$ git pull wordpress_local master
+fatal: 'wordpress_local' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git pull originl master
+fatal: 'originl' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git pull origin master
+From https://github.com/Denrud/wordpress_local
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Deniss-MacBook-Air:wordpress.local Den$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive ...       alias of --recurse-submodules
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+
+Deniss-MacBook-Air:wordpress.local Den$ git fetch 
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den     https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den     https://github.com/AlexGolodok/TopGearV2.git (push)
+Gitignore       master (fetch)
+Gitignore       master (push)
+origin  https://github.com/Denrud/wordpress_local.git (fetch)
+origin  https://github.com/Denrud/wordpress_local.git (push)
+Deniss-MacBook-Air:wordpress.local Den$ git pull origin master
+From https://github.com/Denrud/wordpress_local
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Deniss-MacBook-Air:wordpress.local Den$ git push origin master
+Everything up-to-date
+Deniss-MacBook-Air:wordpress.local Den$ git fetch origin master
+From https://github.com/Denrud/wordpress_local
+ * branch            master     -> FETCH_HEAD
+Deniss-MacBook-Air:wordpress.local Den$ git checkout origin master
+error: pathspec 'origin' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+Deniss-MacBook-Air:wordpress.local Den$ git checkout
+D       wp-content/themes/blankslate/page_2.php
+Deniss-MacBook-Air:wordpress.local Den$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+Deniss-MacBook-Air:wordpress.local Den$ git pull origin master
+From https://github.com/Denrud/wordpress_local
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Deniss-MacBook-Air:wordpress.local Den$ git checkout wp-content/themes/blankslate/page_2.php
+Updated 1 path from the index
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den     https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den     https://github.com/AlexGolodok/TopGearV2.git (push)
+Gitignore       master (fetch)
+Gitignore       master (push)
+origin  https://github.com/Denrud/wordpress_local.git (fetch)
+origin  https://github.com/Denrud/wordpress_local.git (push)
+Deniss-MacBook-Air:wordpress.local Den$ git push Den_test maters https://github.com/AlexGolodok/TopGearV2.git
+fatal: invalid refspec 'https://github.com/AlexGolodok/TopGearV2.git'
+Deniss-MacBook-Air:wordpress.local Den$ git push Den_test master https://github.com/AlexGolodok/TopGearV2.git
+fatal: invalid refspec 'https://github.com/AlexGolodok/TopGearV2.git'
+Deniss-MacBook-Air:wordpress.local Den$ git remote https://github.com/AlexGolodok/TopGearV2.git
+error: Unknown subcommand: https://github.com/AlexGolodok/TopGearV2.git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+Deniss-MacBook-Air:wordpress.local Den$ git clone https://github.com/AlexGolodok/TopGearV2.git
+Cloning into 'TopGearV2'...
+remote: Enumerating objects: 169, done.
+remote: Counting objects: 100% (169/169), done.
+remote: Compressing objects: 100% (130/130), done.
+remote: Total 169 (delta 46), reused 156 (delta 33), pack-reused 0
+Receiving objects: 100% (169/169), 1.16 MiB | 617.00 KiB/s, done.
+Resolving deltas: 100% (46/46), done.
+Checking out files: 100% (107/107), done.
+Deniss-MacBook-Air:wordpress.local Den$ git remote add upstream 
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+Deniss-MacBook-Air:wordpress.local Den$ git remote add upstream https://github.com/AlexGolodok/TopGearV2.git
+Deniss-MacBook-Air:wordpress.local Den$ git git fetch upstream
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+Deniss-MacBook-Air:wordpress.local Den$ git fetch upstream
+warning: no common commits
+remote: Enumerating objects: 169, done.
+remote: Counting objects: 100% (169/169), done.
+remote: Compressing objects: 100% (130/130), done.
+remote: Total 169 (delta 46), reused 156 (delta 33), pack-reused 0
+Receiving objects: 100% (169/169), 1.16 MiB | 412.00 KiB/s, done.
+Resolving deltas: 100% (46/46), done.
+From https://github.com/AlexGolodok/TopGearV2
+ * [new branch]      master     -> upstream/master
+Deniss-MacBook-Air:wordpress.local Den$ git checkout -b master_den
+M       .gitignore
+Switched to a new branch 'master_den'
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+  master
+* master_den
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master_den
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TopGearV2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+warning: adding embedded git repository: TopGearV2
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> TopGearV2
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached TopGearV2
+hint: 
+hint: See "git help submodule" for more information.
+Deniss-MacBook-Air:wordpress.local Den$ git submodule add https://github.com/AlexGolodok/TopGearV2 TopGearV2
+'TopGearV2' already exists in the index
+Deniss-MacBook-Air:wordpress.local Den$ git submodule add https://github.com/AlexGolodok/TopGearV2 TopGearV3
+Cloning into '/Users/Den/.bitnami/stackman/machines/xampp/volumes/root/htdocs/wordpress.local/TopGearV3'...
+remote: Enumerating objects: 169, done.
+remote: Counting objects: 100% (169/169), done.
+remote: Compressing objects: 100% (130/130), done.
+remote: Total 169 (delta 46), reused 156 (delta 33), pack-reused 0
+Receiving objects: 100% (169/169), 1.16 MiB | 477.00 KiB/s, done.
+Resolving deltas: 100% (46/46), done.
+Deniss-MacBook-Air:wordpress.local Den$ git rm --cached TopGearV2
+error: the following file has staged content different from both the
+file and the HEAD:
+    TopGearV2
+(use -f to force removal)
+Deniss-MacBook-Air:wordpress.local Den$ git rm -f TopGearV2
+fatal: could not lookup name for submodule 'TopGearV2'
+Deniss-MacBook-Air:wordpress.local Den$ git rm -f 
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+Deniss-MacBook-Air:wordpress.local Den$ git -f 
+unknown option: -f
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master_den
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+Deniss-MacBook-Air:wordpress.local Den$ git init
+Initialized empty Git repository in /Users/Den/.bitnami/stackman/machines/xampp/volumes/root/htdocs/wordpress.local/.git/
+Deniss-MacBook-Air:wordpress.local Den$ git pull TopGearV2 https://github.com/AlexGolodok/TopGearV2.git
+fatal: invalid refspec 'https://github.com/AlexGolodok/TopGearV2.git'
+Deniss-MacBook-Air:wordpress.local Den$ git pull https://github.com/AlexGolodok/TopGearV2.git
+remote: Enumerating objects: 169, done.
+remote: Counting objects: 100% (169/169), done.
+remote: Compressing objects: 100% (130/130), done.
+remote: Total 169 (delta 46), reused 156 (delta 33), pack-reused 0
+Receiving objects: 100% (169/169), 1.16 MiB | 2.40 MiB/s, done.
+Resolving deltas: 100% (46/46), done.
+From https://github.com/AlexGolodok/TopGearV2
+ * branch            HEAD       -> FETCH_HEAD
+error: The following untracked working tree files would be overwritten by merge:
+        index.php
+Please move or remove them before you merge.
+Aborting
+Deniss-MacBook-Air:wordpress.local Den$ git pull https://github.com/AlexGolodok/TopGearV2.git
+From https://github.com/AlexGolodok/TopGearV2
+ * branch            HEAD       -> FETCH_HEAD
+Checking out files: 100% (107/107), done.
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.php
+        deleted:    plugins/akismet/.htaccess
+        deleted:    plugins/akismet/LICENSE.txt
+        deleted:    plugins/akismet/_inc/akismet.css
+        deleted:    plugins/akismet/_inc/akismet.js
+        deleted:    plugins/akismet/_inc/form.js
+        deleted:    plugins/akismet/_inc/img/logo-full-2x.png
+        deleted:    plugins/akismet/akismet.php
+        deleted:    plugins/akismet/class.akismet-admin.php
+        deleted:    plugins/akismet/class.akismet-cli.php
+        deleted:    plugins/akismet/class.akismet-rest-api.php
+        deleted:    plugins/akismet/class.akismet-widget.php
+        deleted:    plugins/akismet/class.akismet.php
+        deleted:    plugins/akismet/index.php
+        deleted:    plugins/akismet/readme.txt
+        deleted:    plugins/akismet/views/activate.php
+        deleted:    plugins/akismet/views/config.php
+        deleted:    plugins/akismet/views/connect-jp.php
+        deleted:    plugins/akismet/views/enter.php
+        deleted:    plugins/akismet/views/get.php
+        deleted:    plugins/akismet/views/notice.php
+        deleted:    plugins/akismet/views/predefined.php
+        deleted:    plugins/akismet/views/setup.php
+        deleted:    plugins/akismet/views/start.php
+        deleted:    plugins/akismet/views/stats.php
+        deleted:    plugins/akismet/views/title.php
+        deleted:    plugins/akismet/wrapper.php
+        deleted:    plugins/hello.php
+        deleted:    plugins/index.php
+        deleted:    themes/TopGear/404.php
+        deleted:    themes/TopGear/archive.php
+        deleted:    themes/TopGear/attachment.php
+        deleted:    themes/TopGear/author.php
+        deleted:    themes/TopGear/category.php
+        deleted:    themes/TopGear/comments.php
+        deleted:    themes/TopGear/css/bootstrap-grid.css
+        deleted:    themes/TopGear/css/bootstrap-grid.css.map
+        deleted:    themes/TopGear/css/bootstrap-grid.min.css
+        deleted:    themes/TopGear/css/bootstrap-grid.min.css.map
+        deleted:    themes/TopGear/css/bootstrap-reboot.css
+        deleted:    themes/TopGear/css/bootstrap-reboot.css.map
+        deleted:    themes/TopGear/css/bootstrap-reboot.min.css
+        deleted:    themes/TopGear/css/bootstrap-reboot.min.css.map
+        deleted:    themes/TopGear/css/bootstrap.css
+        deleted:    themes/TopGear/css/bootstrap.css.map
+        deleted:    themes/TopGear/css/bootstrap.min.css
+        deleted:    themes/TopGear/css/bootstrap.min.css.map
+        deleted:    themes/TopGear/entry-content.php
+        deleted:    themes/TopGear/entry-footer.php
+        deleted:    themes/TopGear/entry-meta.php
+        deleted:    themes/TopGear/entry-summary.php
+        deleted:    themes/TopGear/entry.php
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-BoldItalic.eot
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-BoldItalic.ttf
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-Thin.eot
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-ThinItalic.ttf
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-UltraLight.eot
+        deleted:    themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-UltraLight.ttf
+        deleted:    themes/TopGear/footer.php
+        deleted:    themes/TopGear/functions.php
+        deleted:    themes/TopGear/header.php
+        deleted:    themes/TopGear/img/BMWCar.jfif
+        deleted:    themes/TopGear/img/BMWCar.png
+        deleted:    themes/TopGear/img/Explorer.png
+        deleted:    themes/TopGear/img/Soul.png
+        deleted:    themes/TopGear/img/TOPGEAR_logo.png
+        deleted:    themes/TopGear/img/Tacoma.png
+        deleted:    themes/TopGear/img/acura.png
+        deleted:    themes/TopGear/img/add_car.png
+        deleted:    themes/TopGear/img/bentley.png
+        deleted:    themes/TopGear/img/bg_pic.jpg
+        deleted:    themes/TopGear/img/bmw.png
+        deleted:    themes/TopGear/img/chevy.png
+        deleted:    themes/TopGear/img/focus.png
+        deleted:    themes/TopGear/img/ford.png
+        deleted:    themes/TopGear/img/honda.png
+        deleted:    themes/TopGear/img/hyundai.png
+        deleted:    themes/TopGear/img/jeep.png
+        deleted:    themes/TopGear/img/listing_bnr.jpg
+        deleted:    themes/TopGear/img/malibu.png
+        deleted:    themes/TopGear/img/mazda.png
+        deleted:    themes/TopGear/img/model_s.png
+        deleted:    themes/TopGear/img/mustang.png
+        deleted:    themes/TopGear/img/nissan.png
+        deleted:    themes/TopGear/img/veloster.png
+        deleted:    themes/TopGear/index.php
+        deleted:    themes/TopGear/js/bootstrap.bundle.js
+        deleted:    themes/TopGear/js/bootstrap.bundle.js.map
+        deleted:    themes/TopGear/js/bootstrap.bundle.min.js
+        deleted:    themes/TopGear/js/bootstrap.bundle.min.js.map
+        deleted:    themes/TopGear/js/bootstrap.js
+        deleted:    themes/TopGear/js/bootstrap.js.map
+        deleted:    themes/TopGear/js/bootstrap.min.js
+        deleted:    themes/TopGear/js/bootstrap.min.js.map
+        deleted:    themes/TopGear/js/main.js
+        deleted:    themes/TopGear/nav-below-single.php
+        deleted:    themes/TopGear/nav-below.php
+        deleted:    themes/TopGear/page.php
+        deleted:    themes/TopGear/readme.txt
+        deleted:    themes/TopGear/screenshot.jpg
+        deleted:    themes/TopGear/search.php
+        deleted:    themes/TopGear/second.php
+        deleted:    themes/TopGear/sidebar.php
+        deleted:    themes/TopGear/single.php
+        deleted:    themes/TopGear/style.css
+        deleted:    themes/TopGear/tag.php
+        deleted:    themes/index.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git commit-m "gitignore"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "gitignore"
+[master 46a7f9f] gitignore
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 108 files changed, 54 insertions(+), 33318 deletions(-)
+ create mode 100644 .gitignore
+ rewrite index.php (78%)
+ delete mode 100644 plugins/akismet/.htaccess
+ delete mode 100644 plugins/akismet/LICENSE.txt
+ delete mode 100644 plugins/akismet/_inc/akismet.css
+ delete mode 100644 plugins/akismet/_inc/akismet.js
+ delete mode 100644 plugins/akismet/_inc/form.js
+ delete mode 100644 plugins/akismet/_inc/img/logo-full-2x.png
+ delete mode 100644 plugins/akismet/akismet.php
+ delete mode 100644 plugins/akismet/class.akismet-admin.php
+ delete mode 100644 plugins/akismet/class.akismet-cli.php
+ delete mode 100644 plugins/akismet/class.akismet-rest-api.php
+ delete mode 100644 plugins/akismet/class.akismet-widget.php
+ delete mode 100644 plugins/akismet/class.akismet.php
+ delete mode 100644 plugins/akismet/index.php
+ delete mode 100644 plugins/akismet/readme.txt
+ delete mode 100644 plugins/akismet/views/activate.php
+ delete mode 100644 plugins/akismet/views/config.php
+ delete mode 100644 plugins/akismet/views/connect-jp.php
+ delete mode 100644 plugins/akismet/views/enter.php
+ delete mode 100644 plugins/akismet/views/get.php
+ delete mode 100644 plugins/akismet/views/notice.php
+ delete mode 100644 plugins/akismet/views/predefined.php
+ delete mode 100644 plugins/akismet/views/setup.php
+ delete mode 100644 plugins/akismet/views/start.php
+ delete mode 100644 plugins/akismet/views/stats.php
+ delete mode 100644 plugins/akismet/views/title.php
+ delete mode 100644 plugins/akismet/wrapper.php
+ delete mode 100644 plugins/hello.php
+ delete mode 100644 plugins/index.php
+ delete mode 100644 themes/TopGear/404.php
+ delete mode 100644 themes/TopGear/archive.php
+ delete mode 100644 themes/TopGear/attachment.php
+ delete mode 100644 themes/TopGear/author.php
+ delete mode 100644 themes/TopGear/category.php
+ delete mode 100644 themes/TopGear/comments.php
+ delete mode 100644 themes/TopGear/css/bootstrap-grid.css
+ delete mode 100644 themes/TopGear/css/bootstrap-grid.css.map
+ delete mode 100644 themes/TopGear/css/bootstrap-grid.min.css
+ delete mode 100644 themes/TopGear/css/bootstrap-grid.min.css.map
+ delete mode 100644 themes/TopGear/css/bootstrap-reboot.css
+ delete mode 100644 themes/TopGear/css/bootstrap-reboot.css.map
+ delete mode 100644 themes/TopGear/css/bootstrap-reboot.min.css
+ delete mode 100644 themes/TopGear/css/bootstrap-reboot.min.css.map
+ delete mode 100644 themes/TopGear/css/bootstrap.css
+ delete mode 100644 themes/TopGear/css/bootstrap.css.map
+ delete mode 100644 themes/TopGear/css/bootstrap.min.css
+ delete mode 100644 themes/TopGear/css/bootstrap.min.css.map
+ delete mode 100644 themes/TopGear/entry-content.php
+ delete mode 100644 themes/TopGear/entry-footer.php
+ delete mode 100644 themes/TopGear/entry-meta.php
+ delete mode 100644 themes/TopGear/entry-summary.php
+ delete mode 100644 themes/TopGear/entry.php
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-BoldItalic.eot
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-BoldItalic.ttf
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-Thin.eot
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-ThinItalic.ttf
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-UltraLight.eot
+ delete mode 100644 themes/TopGear/fonts/Helvetica Neue/HelveticaNeueCyr-UltraLight.ttf
+ delete mode 100644 themes/TopGear/footer.php
+ delete mode 100644 themes/TopGear/functions.php
+ delete mode 100644 themes/TopGear/header.php
+ delete mode 100644 themes/TopGear/img/BMWCar.jfif
+ delete mode 100644 themes/TopGear/img/BMWCar.png
+ delete mode 100644 themes/TopGear/img/Explorer.png
+ delete mode 100644 themes/TopGear/img/Soul.png
+ delete mode 100644 themes/TopGear/img/TOPGEAR_logo.png
+ delete mode 100644 themes/TopGear/img/Tacoma.png
+ delete mode 100644 themes/TopGear/img/acura.png
+ delete mode 100644 themes/TopGear/img/add_car.png
+ delete mode 100644 themes/TopGear/img/bentley.png
+ delete mode 100644 themes/TopGear/img/bg_pic.jpg
+ delete mode 100644 themes/TopGear/img/bmw.png
+ delete mode 100644 themes/TopGear/img/chevy.png
+ delete mode 100644 themes/TopGear/img/focus.png
+ delete mode 100644 themes/TopGear/img/ford.png
+ delete mode 100644 themes/TopGear/img/honda.png
+ delete mode 100644 themes/TopGear/img/hyundai.png
+ delete mode 100644 themes/TopGear/img/jeep.png
+ delete mode 100644 themes/TopGear/img/listing_bnr.jpg
+ delete mode 100644 themes/TopGear/img/malibu.png
+ delete mode 100644 themes/TopGear/img/mazda.png
+ delete mode 100644 themes/TopGear/img/model_s.png
+ delete mode 100644 themes/TopGear/img/mustang.png
+ delete mode 100644 themes/TopGear/img/nissan.png
+ delete mode 100644 themes/TopGear/img/veloster.png
+ delete mode 100644 themes/TopGear/index.php
+ delete mode 100644 themes/TopGear/js/bootstrap.bundle.js
+ delete mode 100644 themes/TopGear/js/bootstrap.bundle.js.map
+ delete mode 100644 themes/TopGear/js/bootstrap.bundle.min.js
+ delete mode 100644 themes/TopGear/js/bootstrap.bundle.min.js.map
+ delete mode 100644 themes/TopGear/js/bootstrap.js
+ delete mode 100644 themes/TopGear/js/bootstrap.js.map
+ delete mode 100644 themes/TopGear/js/bootstrap.min.js
+ delete mode 100644 themes/TopGear/js/bootstrap.min.js.map
+ delete mode 100644 themes/TopGear/js/main.js
+ delete mode 100644 themes/TopGear/nav-below-single.php
+ delete mode 100644 themes/TopGear/nav-below.php
+ delete mode 100644 themes/TopGear/page.php
+ delete mode 100644 themes/TopGear/readme.txt
+ delete mode 100644 themes/TopGear/screenshot.jpg
+ delete mode 100644 themes/TopGear/search.php
+ delete mode 100644 themes/TopGear/second.php
+ delete mode 100644 themes/TopGear/sidebar.php
+ delete mode 100644 themes/TopGear/single.php
+ delete mode 100644 themes/TopGear/style.css
+ delete mode 100644 themes/TopGear/tag.php
+ delete mode 100644 themes/index.php
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ git push den_push master
+fatal: 'den_push' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push TopGearV2 master
+fatal: 'TopGearV2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+Deniss-MacBook-Air:wordpress.local Den$ git push --set-upstream master master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push Denrud master
+fatal: 'Denrud' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push origin  master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+Deniss-MacBook-Air:wordpress.local Den$ git push test
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream test master
+
+Deniss-MacBook-Air:wordpress.local Den$ git push --set-upstream test master
+fatal: 'test' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Deniss-MacBook-Air:wordpress.local Den$ git remote add Den_test
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+Deniss-MacBook-Air:wordpress.local Den$ git remote add Den_test https://github.com/AlexGolodok/TopGearV2.git
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den_test        https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den_test        https://github.com/AlexGolodok/TopGearV2.git (push)
+Deniss-MacBook-Air:wordpress.local Den$ git fetch Den_test
+From https://github.com/AlexGolodok/TopGearV2
+ * [new branch]      master     -> Den_test/master
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m 'test'
+[master fe2ea65] test
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Deniss-MacBook-Air:wordpress.local Den$ git push den_push master
+fatal: 'den_push' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Deniss-MacBook-Air:wordpress.local Den$ git push Den_test master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1005 bytes | 15.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: error: GH006: Protected branch update failed for refs/heads/master.
+remote: error: At least 1 approving review is required by reviewers with write access.
+To https://github.com/AlexGolodok/TopGearV2.git
+ ! [remote rejected] master -> master (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/AlexGolodok/TopGearV2.git'
+Deniss-MacBook-Air:wordpress.local Den$ git branch master_den
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+* master
+  master_den
+Deniss-MacBook-Air:wordpress.local Den$ git checkout master_den
+Switched to branch 'master_den'
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+  master
+* master_den
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master_den
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master_den
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "test_den"
+[master_den 02beaa7] test_den
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+Deniss-MacBook-Air:wordpress.local Den$ git push Den_test master_den
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.24 KiB | 12.00 KiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote: 
+remote: Create a pull request for 'master_den' on GitHub by visiting:
+remote:      https://github.com/AlexGolodok/TopGearV2/pull/new/master_den
+remote: 
+To https://github.com/AlexGolodok/TopGearV2.git
+ * [new branch]      master_den -> master_den
+Deniss-MacBook-Air:wordpress.local Den$ git remote -v
+Den_test        https://github.com/AlexGolodok/TopGearV2.git (fetch)
+Den_test        https://github.com/AlexGolodok/TopGearV2.git (push)
+Deniss-MacBook-Air:wordpress.local Den$ git checkout master
+Switched to branch 'master'
+Deniss-MacBook-Air:wordpress.local Den$ git mrege master
+git: 'mrege' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+Deniss-MacBook-Air:wordpress.local Den$ git merge master
+Already up to date.
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ._git_terminal.txt
+        git_terminal.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git_terminal.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git checkout master_den
+error: Your local changes to the following files would be overwritten by checkout:
+        .gitignore
+Please commit your changes or stash them before you switch branches.
+Aborting
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git_terminal.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Deniss-MacBook-Air:wordpress.local Den$ git add .
+Deniss-MacBook-Air:wordpress.local Den$ git commit -m "txt"
+[master 53e7e63] txt
+ Committer: Denis Rudik <Den@Deniss-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 550 insertions(+)
+ create mode 100644 git_terminal.txt
+Deniss-MacBook-Air:wordpress.local Den$ git push Den_test master_den
+Everything up-to-date
+Deniss-MacBook-Air:wordpress.local Den$ git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ git branch
+* master
+  master_den
+Deniss-MacBook-Air:wordpress.local Den$ git checkout master_den
+Switched to branch 'master_den'
+Deniss-MacBook-Air:wordpress.local Den$ git status
+On branch master_den
+nothing to commit, working tree clean
+Deniss-MacBook-Air:wordpress.local Den$ 
